@@ -1,0 +1,51 @@
+{
+  "tool": "MCPLens",
+  "version": "0.1.0",
+  "target": "/home/hatch/workspace/team247-proposals/mcplens/fixtures/clean-server",
+  "scannedAt": "2026-11-06T09:28:58.084Z",
+  "filesScanned": [
+    "mcp.json",
+    "package.json",
+    "server.js"
+  ],
+  "permissions": {
+    "filesystem": [
+      "server.js"
+    ],
+    "network": [],
+    "environmentVariables": [
+      "MCPLENS_DEMO_GREETING"
+    ],
+    "secretLikeEnvironmentVariables": []
+  },
+  "commands": [
+    {
+      "server": "clean-demo",
+      "command": "node",
+      "args": [
+        "server.js"
+      ]
+    }
+  ],
+  "promptInjectionFindings": [],
+  "findings": [
+    {
+      "type": "config_command",
+      "severity": "low",
+      "file": "mcp.json",
+      "line": 1,
+      "evidence": "clean-demo: node",
+      "message": "Config launches a command for server \"clean-demo\". Review it like any installed binary."
+    }
+  ],
+  "riskScore": 0,
+  "riskLevel": "minimal",
+  "summary": {
+    "totalFindings": 1,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 1,
+    "promptInjection": 0
+  }
+}

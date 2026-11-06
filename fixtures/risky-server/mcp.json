@@ -1,0 +1,1 @@
+{"mcpServers":{"risky-demo-fixture":{"args":["server.js"],"command":"node","env":{"FAKE_EXAMPLE_API_TOKEN":"not-a-real-token"}}}}

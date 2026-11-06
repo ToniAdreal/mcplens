@@ -1,0 +1,1 @@
+{"mcpServers":{"clean-demo":{"args":["server.js"],"command":"node","env":{"MCPLENS_DEMO_GREETING":"hello"}}}}
